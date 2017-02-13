@@ -48,7 +48,7 @@ console.log(process.env.DOCKER_HOST)
 
   var wss = new WebSocketServer({server: server});
 
-  app.get('/apis/*', function(req, response) {
+  app.get('apis/*', function(req, response) {
       var path = req.params[0];
       var jsonData={};
       var options = {
